@@ -1,7 +1,8 @@
-const express = require('express');
-const userRoute = require('./routes/users');
-const incomeRoute = require('./routes/income');
-const expenseRoute = require('./routes/expenses');
+// Using Modular SDK throughout since Firebase Config modules were imported using Modular SDK.
+import express from 'express';
+import userRoute from './routes/users.js';
+import incomeRoute from './routes/income.js';
+import expenseRoute from './routes/expenses.js';
 
 const app = express();
 

@@ -1,5 +1,6 @@
-const {getIncome, createIncome, updateIncome, deleteIncome} = require('../controllers/incomeController');
-const express = require('express');
+// Used Modular SDK in FirebaseConfig and Controllers. Hence maintaining ES Module syntax throughout.
+import {getIncome, createIncome, updateIncome, deleteIncome} from '../controllers/incomeController.js';
+import express from 'express';
 
 let router = express.Router();
 
@@ -11,4 +12,4 @@ router.put("/:id", updateIncome)
 
 router.delete("/:id", deleteIncome)
 
-module.exports = router;
+export default router;

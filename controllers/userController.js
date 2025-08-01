@@ -1,5 +1,7 @@
-const {userRef} = require('../config/firebaseConfig');
-const {readDataFromDB, writeUserDataToDB, getDataBasedOnId, updateDataInDB, deleteDataFromDb} = require('../utils/utilityFunction');
+// Used Modular SDK in FirebaseConfig. Hence using the same import here.
+import {userRef} from '../config/firebaseConfig.js';
+// Since already used, ES Modular syntax, maintaining the same strucutre throughout.
+import {readDataFromDB, writeUserDataToDB, getDataBasedOnId, updateDataInDB, deleteDataFromDb} from '../utils/utilityFunction.js';
 
 // Function to fetch Users from DB. Uses utility function to read data from DB.
 async function getUsers(req,res) {
@@ -208,4 +210,4 @@ async function deleteUsers(req,res) {
     }
 }
 
-module.exports =  {getUsers, createUsers, updateUsers, deleteUsers};
+export {getUsers, createUsers, updateUsers, deleteUsers};

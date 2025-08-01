@@ -1,5 +1,6 @@
-const express = require('express');
-const {getUsers, createUsers, updateUsers, deleteUsers} = require('../controllers/userController');
+// Used Modular SDK in FirebaseConfig and Controllers. Hence maintaining ES Module syntax throughout.
+import {getUsers, createUsers, updateUsers, deleteUsers} from '../controllers/userController.js';
+import express from 'express';
 
 let router = express.Router();
 
@@ -11,4 +12,4 @@ router.put("/:id", updateUsers);
 
 router.delete("/:id", deleteUsers);
 
-module.exports = router;
+export default router;

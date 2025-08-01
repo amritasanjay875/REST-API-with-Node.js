@@ -1,4 +1,5 @@
-const {get, push, set, child, remove} = require('firebase/database');
+// Firebase SDK imported using Modular SDK.
+import {get, push, set, child, remove} from 'firebase/database';
 
 // Function to read data from DB. The ref to the database will be passed to the function from the corresponding controller.
 async function readDataFromDB(dataRef) {
@@ -154,4 +155,4 @@ async function writeExpenseDataToDB(dataRef, expense) {
     }   
 }
 
-module.exports = {readDataFromDB, getDataBasedOnId, writeUserDataToDB, updateDataInDB, deleteDataFromDb, writeIncomeDataToDB, writeExpenseDataToDB};
+export {readDataFromDB, getDataBasedOnId, writeUserDataToDB, updateDataInDB, deleteDataFromDb, writeIncomeDataToDB, writeExpenseDataToDB};

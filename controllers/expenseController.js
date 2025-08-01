@@ -1,5 +1,7 @@
-const {expenseRef} = require('../config/firebaseConfig');
-const {readDataFromDB, writeExpenseDataToDB, getDataBasedOnId, updateDataInDB, deleteDataFromDb} = require('../utils/utilityFunction');
+// Used Modular SDK in FirebaseConfig. Hence using the same import here.
+import {expenseRef} from '../config/firebaseConfig.js';
+// Since already used, ES Modular syntax, maintaining the same strucutre throughout.
+import {readDataFromDB, writeExpenseDataToDB, getDataBasedOnId, updateDataInDB, deleteDataFromDb} from '../utils/utilityFunction.js';
 
 // Function to fetch Expenses from DB. Uses utility function to read data from DB.
 async function getExpense(req,res) {
@@ -330,4 +332,4 @@ async function deleteExpense(req, res) {
     }
 }
 
-module.exports = {getExpense, createExpense, updateExpense, deleteExpense};
+export {getExpense, createExpense, updateExpense, deleteExpense};

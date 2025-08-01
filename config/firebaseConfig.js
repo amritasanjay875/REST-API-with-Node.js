@@ -1,6 +1,7 @@
-const { initializeApp } = require('firebase/app');
-const { getDatabase, ref } = require("firebase/database");
-const dotenv = require('dotenv');
+// Using ESM import syntax for importing Firebase using Modular SDK.
+import { initializeApp } from 'firebase/app';
+import { getDatabase, ref } from "firebase/database";
+import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -23,4 +24,5 @@ const userRef = ref(database, "users");
 const incomeRef = ref(database, "income");
 const expenseRef = ref(database, "expenses");
 
-module.exports = {userRef, incomeRef, expenseRef};
+// Since using modular imports, using export instead of module.exports.
+export {userRef, incomeRef, expenseRef};
