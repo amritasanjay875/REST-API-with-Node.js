@@ -85,6 +85,10 @@ The server will run at: http://localhost:3000.
 
 The endpoints can be tested using tools like Postman.
 
+## Firebase Integration Notes
+
+The application uses the Firebase Modular SDK consistently across all modules. The Firebase configuration and services are imported using modular functions. By adopting the modular SDK throughout, the application maintains a clean and scalable architecture.
+
 ## Author
 
 Amrita Sanjay
