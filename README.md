@@ -1,6 +1,6 @@
 # REST API
 
-A simple REST API built with Node and Express.js, featuring endpoints for managing users, income, and expenses.
+A simple REST API built with Node and Express.js, featuring endpoints for managing users, income, and expenses. The API is deployed at: https://rest-api-rndr.onrender.com/.
 
 ## Endpoints
 
