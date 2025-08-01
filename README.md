@@ -34,13 +34,17 @@ A simple REST API built with Node and Express.js, featuring endpoints for managi
 ### 1. Clone the Repository
 
 To clone the repository from Github, use the following commands:
+```bash
 git clone https://github.com/amritasanjay875/REST-API-with-Node.js.git
 cd REST-API-with-Node.js
+```
 
 ### 2. Install Dependencies
 
 To install node-modules required for running the application, use the following command:
+```bash
 npm install
+```
 
 ### 3. Set Up Environment Variables
 
@@ -54,21 +58,26 @@ PROJECT_ID=rest-api-47e26
 STORAGE_BUCKET=rest-api-47e26.firebasestorage.app
 MESSAGING_SENDER_ID=55104848894
 APP_ID=1:55104848894:web:4a94e68c51b03dd16836af
+```
 
 ### 4. Install additional dependencies
 
-The app uses the following packages:
+The application uses the following packages:
   - Express.js - Web framework. 
   - dotenv - Loads environment variables.
   - firebase - Data stored in Firebase.
 
 Install these packages manually if needed using the following command:
+```bash
 npm install express dotenv firebase
+```
 
 ### 5. Launch the application
 
 Start the server locally using the following command:
+```bash
 nodemon index.js
+```
 
 The server will run at: http://localhost:3000.
 
