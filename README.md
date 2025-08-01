@@ -48,17 +48,7 @@ npm install
 
 ### 3. Set Up Environment Variables
 
-Create a `.env` file in the root directory and include the following:
-
-```env
-API_KEY=AIzaSyB--rYQ62STRiqw6ENMffbo8l0bNduR05I
-AUTH_DOMAIN=rest-api-47e26.firebaseapp.com
-DATABASE_URL=https://rest-api-47e26-default-rtdb.firebaseio.com
-PROJECT_ID=rest-api-47e26
-STORAGE_BUCKET=rest-api-47e26.firebasestorage.app
-MESSAGING_SENDER_ID=55104848894
-APP_ID=1:55104848894:web:4a94e68c51b03dd16836af
-```
+Create a `.env` file in the root directory and include the firebase credentials.
 
 ### 4. Install additional dependencies
 
