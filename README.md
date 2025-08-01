@@ -1,6 +1,6 @@
 # REST API
 
-A simple REST API built with Express.js, featuring endpoints for managing users, income, and expenses.
+A simple REST API built with Node and Express.js, featuring endpoints for managing users, income, and expenses.
 
 ## Endpoints
 
@@ -24,7 +24,11 @@ A simple REST API built with Express.js, featuring endpoints for managing users,
   - `PUT /income/:id` - Update an existing income by ID.
   - `DELETE /income/:id` - Delete an income by ID.
 
+## Features
 
+- Back End: Node with Express.js
+- Database: Firebase Realtime Database,
+   
 ## Installation & Setup
 
 ### 1. Clone the Repository
@@ -40,8 +44,9 @@ npm install
 
 ### 3. Set Up Environment Variables
 
-Create a .env file in the root directory and include the following:
+Create a `.env` file in the root directory and include the following:
 
+```env
 API_KEY=AIzaSyB--rYQ62STRiqw6ENMffbo8l0bNduR05I
 AUTH_DOMAIN=rest-api-47e26.firebaseapp.com
 DATABASE_URL=https://rest-api-47e26-default-rtdb.firebaseio.com
